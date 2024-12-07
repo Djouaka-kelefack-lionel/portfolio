@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio 3D</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Section Hero -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="animate-text">John Doe</h1>
+                <p class="animate-text" style="font-size: 1.5em;">Développeur Web Créatif</p>
+            </div>
+        </section>
+        <!-- Section Projets -->
+        <section class="projects">
+            <h2>Mes Projets</h2>
+            <div class="project-grid">
+                <div class="project-card" data-tilt data-tilt-max="10">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="Projet 1">
+                    </div>
+                    <div class="project-content">
+                        <h3>Projet 1</h3>
+                        <p>Application Web E-commerce</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <a href="#" class="project-link">Voir le projet</a>
+                    </div>
+                </div>
+                <div class="project-card" data-tilt data-tilt-max="10">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6" alt="Projet 2">
+                    </div>
+                    <div class="project-content">
+                        <h3>Projet 2</h3>
+                        <p>Dashboard Analytics</p>
+                        <div class="project-tech">
+                            <span>Vue.js</span>
+                            <span>Firebase</span>
+                            <span>D3.js</span>
+                        </div>
+                        <a href="#" class="project-link">Voir le projet</a>
+                    </div>
+                </div>
+                <div class="project-card" data-tilt data-tilt-max="10">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1555421689-491a97ff2040" alt="Projet 3">
+                    </div>
+                    <div class="project-content">
+                        <h3>Projet 3</h3>
+                        <p>Application Mobile</p>
+                        <div class="project-tech">
+                            <span>React Native</span>
+                            <span>Redux</span>
+                            <span>AWS</span>
+                        </div>
+                        <a href="#" class="project-link">Voir le projet</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Compétences -->
+        <section class="skills">
+            <h2>Compétences</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <div class="skill-header">
+                        <span>HTML/CSS</span>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-bar" style="--level: 90%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill">
+                    <div class="skill-header">
+                        <span>JavaScript</span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-bar" style="--level: 85%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill">
+                    <div class="skill-header">
+                        <span>React</span>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-bar" style="--level: 80%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill">
+                    <div class="skill-header">
+                        <span>Node.js</span>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-bar" style="--level: 75%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill">
+                    <div class="skill-header">
+                        <span>Python</span>
+                        <span class="skill-percentage">70%</span>
+                    </div>
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-bar" style="--level: 70%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill">
+                    <div class="skill-header">
+                        <span>UI/UX Design</span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-bar" style="--level: 85%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section class="contact">
+            <h2>Contact</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Nom" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".project-card"), {
+            max: 10,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.3,
+        });
+    </script>
+</body>
+</html>
