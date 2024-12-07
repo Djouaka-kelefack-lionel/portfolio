@@ -4,7 +4,7 @@ Un portfolio professionnel avec des effets 3D, des animations fluides et un desi
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 
-##�� Caractéristiques Principales
+## Caractéristiques Principales
 
 ### 🎨 Design & Thème
 - **Palette de Couleurs**: 
